@@ -1,6 +1,13 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fff8f0;      /* Fondo suave y cálido */
+  --foreground: #2d2d2d;      /* Texto principal */
+  --primary: #d7263d;         /* Rojo apetitoso para botones o acentos */
+  --secondary: #fbb13c;       /* Amarillo mostaza para resaltes */
+  --accent: #3772ff;          /* Azul para enlaces o detalles */
+
+  /* ejemplo de uso de las variables css
+    background: var(--primary);
+  */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -40,3 +47,7 @@ a {
     color-scheme: dark;
   }
 }
+
+
+
+

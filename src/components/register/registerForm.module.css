@@ -1,0 +1,66 @@
+.registerForm {
+    background: var(--background);
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(55, 114, 255, 0.08);
+    padding: 2rem 2.5rem;
+    max-width: 350px;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .formGroup label {
+    font-weight: 600;
+    color: var(--foreground);
+  }
+
+  .input {
+    padding: 0.7rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #fff;
+    color: var(--foreground);
+    transition: border 0.2s;
+  }
+
+  .input:focus {
+    border: 1.5px solid var(--primary);
+    outline: none;
+  }
+
+  .button {
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: background 0.2s;
+  }
+
+  .button:hover {
+    background: var(--secondary);
+    color: var(--foreground);
+  }
+
+  .error {
+    color: var(--primary);
+    background: #fff0f3;
+    border: 1px solid var(--primary);
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    text-align: center;
+  }

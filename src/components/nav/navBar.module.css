@@ -1,0 +1,25 @@
+.navbar {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    background: var(--background);
+    border-bottom: 2px solid var(--primary);
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .link {
+    color: var(--foreground);
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .link:hover,
+  .link:focus {
+    background: var(--primary);
+    color: #fff;
+    text-decoration: none;
+  }
