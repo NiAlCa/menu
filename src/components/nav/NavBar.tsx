@@ -34,7 +34,7 @@ const NavBar: React.FC = () => {
 
   const handleLogout = async () => {
     await fetch("/api/logout", { method: "POST" });
-    router.push("/login");
+    window.location.href = "/login"; // Redirige a la página de inicio después de cerrar sesión
   };
 
   return (

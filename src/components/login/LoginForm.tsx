@@ -21,7 +21,7 @@ export default function LoginForm() {
     });
     if (res.ok) {
       localStorage.setItem("sessionChanged", Date.now().toString()); // <-- agrega esta línea
-      router.push('/dashboard');
+      window.location.href = '/dashboard';
     } else {
       const data = await res.json();
       setError(data.error || 'Error al iniciar sesión');
